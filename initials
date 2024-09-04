@@ -1,0 +1,30 @@
+public class PrintInitials {
+    public static void main(String[] args) {
+        int height = 9; // Number of rows
+        
+        for (int i = 0; i < height; i++) {
+            // Printing 'T'
+            if (i == 0) {
+                System.out.print("*********   ");
+            } else {
+                System.out.print("    *       ");
+            }
+            
+            // Printing 'J'
+            if (i < height - 2) {
+                System.out.print("    *       ");
+            } else if (i == height - 2) {
+                System.out.print("*****       ");
+            } else {
+                System.out.print("  ***       ");
+            }
+
+            // Printing 'O'
+            if (i == 0 || i == height - 1) {
+                System.out.println("  *****  ");
+            } else {
+                System.out.println("  *   *  ");
+            }
+        }
+    }
+}
